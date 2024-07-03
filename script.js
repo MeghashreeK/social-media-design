@@ -56,7 +56,7 @@ msgSidebar.addEventListener("click", () => {
 
 const searchMessage = () => {
     const val = messageSearchbar.value.toLowerCase().trim();
-    console.log(val);
+    // console.log(val);
     message.forEach(chat => {
         let names = Array.from(chat.querySelectorAll("h5")).map(h5Element => h5Element.innerText.toLowerCase());
         if (names.some(name => name.includes(val))) {
